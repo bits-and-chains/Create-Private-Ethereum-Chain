@@ -1,4 +1,7 @@
 ## ReadMe
+___
+
+![](http://www.8womendream.com/wp-content/uploads/chains.jpg)
 
 ### Background: There are three types of blockchains, public, private, and consortium.
 
@@ -6,8 +9,9 @@
 
 #### Consortium blockchains are blockchains where a pre-selected group of nodes are selected. The [R3](http://www.r3cev.com/) is an example of a consortium blockchain.
 
-
 ##### A private blockchain only has one organization controls the node. Private blockchain acts very much like a traditional database, only it is immutable
+
+___
 
 ### Essential Reading
 

@@ -1,21 +1,22 @@
-__Creating Your Own Private Chain__
+### Creating Your Own Private Chain
 
-(https://giphy.com/gifs/Nu9WW7RBM3Rle/html5)
+__
 
-_Note these intstructions are or a Mac but will have more intstructions for other platforms soon_
-
-#### Software Requirments
+#### Software Requirements
 
 [Homebrew](http://brew.sh/)
+
 [Ethereum](https://www.ethereum.org/)
 
+[geth](https://github.com/ethereum/go-ethereum)
 
 
 
 ### Quick Start
-1. Get some background information about terminals [here](ReadMe.md)
-2. Open up a terminal
-3. Download Ethereum via Homebrew:
+
+Download Ethereum via Homebrew
+
+Download geth
 
 ```
 brew tap ethereum/ethereum
@@ -24,27 +25,24 @@ brew install ethereum
 ```
 
 
-4. Start your private blockchain using geth:
+Start your private blockchain using geth
 
 
 ```
-geth --datadir ~/.ethereum_private init ~/dev/genesis.json
-
-geth --fast --cache 512 --ipcpath ~/Library/Ethereum/geth.ipc --networkid 1234 --datadir ~/.ethereum_private  console
+geth --identity "ExampleChain" --datadir --nodiscover --maxpeers 0 --rpc ~/.ethereum_private init genesis.json
 ```
 
 
 ### Notes and Definitions
 
-Let's take a closer look at those parameterst sthat we typed in for #4
 
 ```
-geth --datadir ~/.ethereum_private init ~/dev/genesis.json
+geth --datadir ~/.ethereum_private init genesis.json
 ```
-`geth`: is the client
+`geth`: the Go client
 
-`--datadir ~/.ethereum_private`: the directory where you will keep your blockchain datadia
+`genesis.json`: The location of your genesis file. Genesis file is like the config file for your blockchain. Some of the parameters you can set in the genesis file includes how much ether you would like to prepopulate in your blockchain. Genesis creates the first "block" in your private blockchain.
 
-`~/dev/genesis.json`: The location of your genesis file. Genesis file is like the config file for your blockchain. Some of the parameters you can set in the genesis file includes how much ether you would like to prepopulate in your blockchain. Genesis creates the first "block" in your private blockchain.
+`maxpeers 0`: Makes the private node non-discoverable
 
-`nonce`: 
+`rpc`: Enables RPC interface on node

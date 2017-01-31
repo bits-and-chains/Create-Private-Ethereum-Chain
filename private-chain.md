@@ -39,9 +39,9 @@ geth --identity "ExampleChain" --datadir --nodiscover --maxpeers 0 --rpc ~/.ethe
 ```
 geth --datadir ~/.ethereum_private init genesis.json
 ```
-`geth`: the Go client
+`geth`: the Go Ethereum client
 
-`genesis.json`: The location of your genesis file. Genesis file is like the config file for your blockchain. Some of the parameters you can set in the genesis file includes how much ether you would like to prepopulate in your blockchain. Genesis creates the first "block" in your private blockchain.
+`genesis.json`: Your genesis file. Genesis file is like the config file for your blockchain. Some of the parameters you can set in the genesis file includes how much ether you would like to prepopulate in your blockchain. Genesis creates the first "block" in your private blockchain.
 
 `maxpeers 0`: Makes the private node non-discoverable
 

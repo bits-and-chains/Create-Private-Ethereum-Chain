@@ -16,7 +16,9 @@ ___
 ### Essential Reading
 
 [On Public and Private Blockchains](https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/)
+
 [Ethereum Wiki](https://github.com/ethereum/wiki/wiki/Glossary)
+
 [Eth Docs](http://ethdocs.org/en/latest/network/test-networks.html)
 
 
